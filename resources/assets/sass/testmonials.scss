@@ -1,0 +1,39 @@
+
+.testmonials{
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background: transparent;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  height: auto;
+  margin-bottom: 50px;
+
+}
+
+.testmonials-content{
+  padding-top: $distancia-padrao-entre-elementos-doshop;
+  font-family: $fonte-padrao;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+#testmonials-author{
+  font-family: $fonte-padrao;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}

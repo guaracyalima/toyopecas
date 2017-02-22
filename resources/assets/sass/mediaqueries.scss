@@ -1,0 +1,153 @@
+@media(max-width:768px) {
+  section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .image-bg-fixed-height{
+    height: 60em;
+  }
+
+  .section-heading {
+    font-size: 2em;
+  }
+  #sobre{
+    font-size: 1em;
+  }
+}
+
+@media(max-width:920px) {
+  .image-bg-fixed-height{
+    height: 40em;
+  }
+}
+
+//Seção serviços
+
+@media (max-width: 500px) {
+  #toyopecas-slogan{
+    font-size: 10px;
+  }
+
+  #logo-branco{
+    float:left;
+    padding-left: 2em;
+    height: 2em;
+    padding-bottom: 2px;
+  }
+  .contact-button{
+    left: 0;
+  }
+
+  .testmonials-content{
+
+  }
+
+  .testmonials-content{
+    font-size: 18px;
+  }
+
+  #testmonials-author{
+
+    font-size: 13px;
+  }
+
+  section{
+    width: 100%;
+    height: auto;
+    & img {
+      width: 134px;
+      height: 134px
+    }
+
+    & h3{
+      font-size: 16px;
+    }
+    & p{
+      font-size: 12px;
+    }
+
+  }
+
+}
+
+
+//sobre
+
+@media (min-width: 760px) {
+
+
+  .contact-button{
+    left: 15.6em;
+  }
+
+
+  #fachada-img{
+    float: right;
+
+  }
+
+  .article-sobre{
+    font-size: 14px;
+    padding-right: 8em;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+
+
+  #fachada-img{
+    float: none;
+    width: 50%;
+    padding-right: 3em;
+  }
+
+  .article-sobre{
+    font-size: 14px;
+  }
+
+
+
+}
+
+//slogan
+
+
+@media (min-width: 760px) {
+  //
+  //.navbar-brand > img{
+  //  display: block;
+  //}
+  //
+  .slogan img{
+    width: 41%;
+
+  }
+
+  #toyopecas-slogan{
+    font-size: 36px;
+    padding-top: 6em;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+
+
+  #toyopecas-slogan{
+    font-size: 18px;
+    padding-top: 11em;
+  }
+
+}
+
+@media (max-width: 480px) {
+  //.navbar-brand > img{
+  //  display: none;
+  //}
+}

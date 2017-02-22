@@ -1,0 +1,61 @@
+.image-bg-fluid-height {
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+}
+
+.image-bg-fluid-height {
+  background: url('http://pipsum.com/1920x720.jpg') no-repeat center center scroll;
+  -ms-filter:"alpha(opacity=50)";
+  -moz-opacity:.50;
+  filter:alpha(opacity=50);
+  opacity:.50;
+
+  height: 40em;
+}
+
+#title-head{
+  font-family: $fonte-padrao;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -372px;
+  left:0;
+  text-align: center;
+}
+
+#text-head{
+  font-family: $fonte-padrao;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: #d8d8d8;
+  position: relative;
+  top: -372px;
+  text-align: center;
+}
+
+.topo-textos{
+  top:-20px;
+  clear: both;
+  height: 0;
+}
+
+#logo-branco{
+  float:none;
+  padding-left: 8em;
+  height: 2em;
+  padding-bottom: 2px;
+}

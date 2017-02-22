@@ -1,0 +1,84 @@
+
+.image-bg-fixed-height {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  //display: flex;
+  //align-items: center;
+  //justify-content: space-between;
+}
+
+.image-bg-fixed-height {
+  background: transparent;
+  height: 520px;
+  padding-bottom: 3em;
+  width: 100%;
+}
+
+//#fachada-img{
+//  float: right;
+//}
+
+.img-center {
+  margin: 0 auto;
+}
+
+@media(max-width: 468px) {
+  .image-bg-fixed-height{
+    height: auto;
+  }
+}
+
+
+#sobre{
+  font-family: $fonte-padrao;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  padding-top: 2.7em;
+  padding-bottom: 0.9em;
+
+}
+
+.article-sobre{
+  font-family: $fonte-padrao;
+  //font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #4a4a4a;
+  padding-bottom: 30px;
+}
+
+
+.missao{
+  font-family: $fonte-secundaria;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
+.visao{
+  font-family: $fonte-secundaria;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}

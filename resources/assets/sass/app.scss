@@ -1,0 +1,145 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+// Variables
+@import "variables";
+
+//layout
+body {
+  margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.owl-carousel .owl-item img{
+  display: block;
+  width: 150px;
+  -webkit-transform-style: preserve-3d;
+  height: 150px;
+  position:relative;
+  top:50%;
+  left:61%;
+  margin-left:-111px;
+  border-radius:50%;
+}
+
+.owl-controls {
+  position: relative;;
+  top: 0;
+  left: 0;
+  transform: translate(0%,-100%);
+  width: 100%;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 96%;
+
+  .owl-prev {
+    float: left;
+  }
+  .owl-next {
+    float: right;
+  }
+}
+
+#previ{
+  height: 3em;
+}
+
+@import "mediaqueries";
+@import "header";
+@import "services";
+@import "sobre";
+@import "slogan";
+@import "divisor";
+@import "produtos";
+@import "testmonials";
+@import "contact";
+@import "footer";
+
+
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+.navbar-inverse{
+  //background-color: #F03861;
+  //border-color: #F03861;
+
+  background-color: rgba(255, 0, 0, 0.44);
+  border-color: rgba(255, 0, 0, 0.44);
+}
+
+.form-control{
+  //background: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0%;
+}
+
+.form{
+  margin-left: 0;
+  padding-right: 33px;
+}
+
+.navbar-inverse .navbar-nav > li > a  {
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar-inverse .navbar-brand{
+  color: #fff;
+}
+
+
+.navbar-nav {
+  float: right;
+  padding-right: 6em;
+  padding-top: 1em;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+  margin-left: 100px;
+}
+
+.testmonials-author{
+  width: 40px;
+}
+
+.img-responsive{
+  width: 40%;
+}
+
+.divisor {
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background: #d14850;
+  height: 0.8em;
+}
+
+#fa{
+  font-size: 48px;
+  color: #ffffff;
+  padding-top: 1em;
+}
+
+.navbar-brand{
+  float: none;
+}
+
+nav.navbar{
+  // Animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+nav.navbar.shrink {
+  min-height: 35px;
+  height: 4.2em;
+}
+
