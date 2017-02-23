@@ -16,6 +16,15 @@
   }
 }
 
+@media (min-width: 920px) {
+  #logo-branco{
+    float:none;
+    padding-left: 8em;
+    height: 2em;
+    padding-bottom: 2px;
+  }
+}
+
 @media(max-width:920px) {
   .image-bg-fixed-height{
     height: 40em;
@@ -25,6 +34,10 @@
 //Seção serviços
 
 @media (max-width: 500px) {
+
+
+
+
   #toyopecas-slogan{
     font-size: 10px;
   }
@@ -34,6 +47,9 @@
     padding-left: 2em;
     height: 2em;
     padding-bottom: 2px;
+    position: relative;
+    top: 50%;
+    //left: -40%;
   }
   .contact-button{
     left: 0;

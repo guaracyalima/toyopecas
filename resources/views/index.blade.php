@@ -136,7 +136,8 @@
 
 
     <!-- sobre -->
-    <div class="container">
+    <article>
+    <div class="container-fluid">
         <aside class="image-bg-fixed-height">
             {{--<aside class="image-bg-fixed-height">--}}
 
@@ -169,6 +170,7 @@
             </div>
         </aside>
     </div>
+    </article>
 
 
 
@@ -299,7 +301,7 @@
 
     <!-- Contato -->
     <div class="contato" id="contato">
-        <div class="col-sm-10 col-lg-10 ">
+        <div class="col-sm-12 col-md-12 col-lg-12 ">
 
 
             <div class="container">

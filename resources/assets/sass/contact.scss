@@ -4,13 +4,12 @@
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  //background: #0d3625;
-  background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+  //background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+  background: url('img/img.png') no-repeat center center scroll;
   padding-top: 1em;
   padding-bottom: 1em;
   height: 33em;
-  //-webkit-filter: blur(10.9px);
-  //filter: blur(10.9px);
+
 }
 
 #contact-title{

@@ -4,21 +4,15 @@
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  //display: flex;
-  //align-items: center;
-  //justify-content: space-between;
 }
 
 .image-bg-fixed-height {
-  background: transparent;
+  background: #fff;
   height: 520px;
   padding-bottom: 3em;
-  width: 100%;
+  //width: 100%;
 }
 
-//#fachada-img{
-//  float: right;
-//}
 
 .img-center {
   margin: 0 auto;
