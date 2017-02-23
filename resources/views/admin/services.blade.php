@@ -405,10 +405,33 @@
             <li>Site</li>
             <li class="active">Blank</li>
           </ul>
+          
+          
+          @foreach($dados as $item)
+            <ul>
+              <li>{{ $item->texto }}</li>
+              <li>{{ $item->id }}</li>
+              <li>{{$item->titulo}}</li>
+              <li>{{$item->img}}</li>
+            </ul>
+            @endforeach
+          
+          
+          
+          
         </div>
         <div class="l-spaced-vertical">
           <div class="l-box no-border">
             <div class="l-spaced">
+
+              @if ($message = Session::get('success'))
+                <div class="alert alert-success alert-block">
+                  <button type="button" class="close" data-dismiss="alert">×</button>
+                  <strong>{{ $message }}</strong>
+                </div>
+                <img src="/uploads/{{ Session::get('path') }}">
+              @endif
+
               <h3>Gerenciar serviços</h3>
               @if(session('erro'))
                 <div class="alert alert-danger">
@@ -416,7 +439,7 @@
                 </div>
               @endif
 
-              {!! Form::open(['route' => 'admin.services.create', 'class' => 'form']) !!}
+              {!! Form::open(['route' => 'admin.services.create', 'class' => 'form', 'enctype' => 'multipart/form-data']) !!}
 
               <div class="form-group">
                 {!! Form::label('titulo', 'Titulo em destaque:') !!}
@@ -430,9 +453,9 @@
               </div>
 
               <div class="form-group">
-                {!! Form::label('imagem', 'Imagem:') !!}
+                {!! Form::label('img', 'Imagem:') !!}
 
-                {!! Form::file('imagem', null ,['class' => 'form-control']) !!}
+                {!! Form::file('img', null ,['class' => 'form-control']) !!}
               </div>
 
               {!! Form::submit('Cadastrar', ['class' => 'btn btn-primary center-block']) !!}

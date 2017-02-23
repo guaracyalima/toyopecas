@@ -18,7 +18,7 @@ class CreateSobresTable extends Migration
             $table->string('principal');
             $table->string('missao');
             $table->string('visao');
-            $table->string('img');
+            $table->string('img')->default('null');
             $table->timestamps();
 		});
 	}

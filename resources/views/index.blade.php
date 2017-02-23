@@ -46,9 +46,71 @@
     </nav>
 
     <!-- Topo_oficina -->
-    <header class="image-bg-fluid-height" id="home">
+    {{--<header class="image-bg-fluid-height" id="home">--}}
+
+    {{--</header>--}}
+
+
+
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        {{--<ol class="carousel-indicators">--}}
+            {{--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>--}}
+            {{--<li data-target="#myCarousel" data-slide-to="1"></li>--}}
+            {{--<li data-target="#myCarousel" data-slide-to="2"></li>--}}
+        {{--</ol>--}}
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url({{ asset('img/bg-01.jpg') }});"></div>
+            </div>
+
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url({{ asset('img/bg-02.jpg') }});"></div>
+            </div>
+
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url({{ asset('img/bg-03.jpg') }});"></div>
+            </div>
+
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url({{ asset('img/bg-04.jpg') }});"></div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        {{--<a class="left carousel-control" href="#myCarousel" data-slide="prev">--}}
+            {{--<span class="icon-prev"></span>--}}
+        {{--</a>--}}
+        {{--<a class="right carousel-control" href="#myCarousel" data-slide="next">--}}
+            {{--<span class="icon-next"></span>--}}
+        {{--</a>--}}
 
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="topo-textos" >
 
@@ -74,42 +136,42 @@
                 <div class="col-md-12 owl-carousel">
 
                     <div class="item">
-                        <img src="{{ asset('img/4.jpg') }}" alt="">
+                        {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
                     </div>
 
                     <div class="item">
-                        <img src="{{ asset('img/4.jpg') }}" alt="">
+                        {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
                     </div>
 
                     <div class="item">
-                        <img src="{{ asset('img/4.jpg') }}" alt="">
+                        {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
                     </div>
 
                     <div class="item">
-                        <img src="{{ asset('img/4.jpg') }}" alt="">
+                        {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
                     </div>
 
                     <div class="item">
-                        <img src="{{ asset('img/4.jpg') }}" alt="">
+                        {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
                     </div>
 
                     <div class="item">
-                        <img src="{{ asset('img/4.jpg') }}" alt="">
+                        {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
@@ -137,39 +199,39 @@
 
     <!-- sobre -->
     <article>
-    <div class="container-fluid">
-        <aside class="image-bg-fixed-height">
-            {{--<aside class="image-bg-fixed-height">--}}
+        <div class="container-fluid">
+            <aside class="image-bg-fixed-height">
+                {{--<aside class="image-bg-fixed-height">--}}
 
-            <p id="sobre">sobre</p>
+                <p id="sobre">sobre</p>
 
-            <div class="row">
+                <div class="row">
 
-                <div class="col-sm-6 col-md-5 col-lg-6">
-                    <img src="{{ asset('img/sobreImg.png') }}" alt="" class="img-responsive" id="fachada-img">
+                    <div class="col-sm-6 col-md-5 col-lg-6">
+                        <img src="{{ asset('img/sobreImg.png') }}" alt="" class="img-responsive" id="fachada-img">
+                    </div>
+
+                    <div class="col-sm-6 col-md-7 col-lg-6">
+
+                        <p class="article-sobre">A empresa foi fundada em 1997, por Josualdo José da Silva com o objetivo de oferecer serviços
+                            especializados em revisões preventivas e corretivas em veiculos importados. Logo, percebeu-se
+                            a necessidade de consolidar os serviços com a venda de peças originais, genuinas e similares.
+                        </p>
+
+                        <p class="missao">Missão</p>
+
+                        <p class="article-sobre">Prestar serviço e produto com qualidade para atenderas necessidades dos nossos clientes com
+                            o máximo conforto, segurança e ética.</p>
+
+                        <p class="visao">Visão</p>
+
+                        <p class="article-sobre">Consolidar a marca ser referencia no setor automotivo como uma empresa padrão em qualidade
+                            e confiabilidade e expandir com filiais.</p>
+
+                    </div>
                 </div>
-
-                <div class="col-sm-6 col-md-7 col-lg-6">
-
-                    <p class="article-sobre">A empresa foi fundada em 1997, por Josualdo José da Silva com o objetivo de oferecer serviços
-                        especializados em revisões preventivas e corretivas em veiculos importados. Logo, percebeu-se
-                        a necessidade de consolidar os serviços com a venda de peças originais, genuinas e similares.
-                    </p>
-
-                    <p class="missao">Missão</p>
-
-                    <p class="article-sobre">Prestar serviço e produto com qualidade para atenderas necessidades dos nossos clientes com
-                        o máximo conforto, segurança e ética.</p>
-
-                    <p class="visao">Visão</p>
-
-                    <p class="article-sobre">Consolidar a marca ser referencia no setor automotivo como uma empresa padrão em qualidade
-                        e confiabilidade e expandir com filiais.</p>
-
-                </div>
-            </div>
-        </aside>
-    </div>
+            </aside>
+        </div>
     </article>
 
 
@@ -362,6 +424,11 @@
     <!-- Js -->
 @section('post-script')
     <script>
+
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+
 
         var owl = $('.owl-carousel');
         owl.owlCarousel({

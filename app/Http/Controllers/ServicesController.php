@@ -2,50 +2,56 @@
 
 namespace Toyopecas\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
 //use File;
 use Toyopecas\Models\Services;
+use Toyopecas\Repositories\ServicesRepository;
 
 class ServicesController extends Controller
 {
+
+    /**
+     * @var ServicesRepository
+     */
+    private $repository;
+
+    public function __construct ( ServicesRepository $repository )
+    {
+
+        $this->repository = $repository;
+    }
     public function index (  )
     {
-        return view('admin.services');
+        $dados = $this->repository->paginate(1);
+        return view('admin.services', compact('dados'));
     }
 
-    public function create (  )
+    public function create (Request $request  )
     {
-        if (Input::file('imagem')){
 
-            $imagem = Input::file('imagem');
-            $extencao = $imagem->getClienteoriginalExtension();
-
-            if ($extencao != 'jpg' && $extencao != 'png'){
-                return back()->with('erro', 'Erro: arquivo não suportado');
-            }
-
-        }
 
         $post = new Services;
         $post->titulo = Input::get('titulo');
         $post->texto = Input::get('texto');
-        $post->img = "";
+        $post->img ="";
 
+        $imageName = $post->id.'.'.$request->img->getClientOriginalExtension();
+        $request->img->move(public_path('uploads'), $imageName);
+
+        $post->img = public_path('/uploads/').$post->id.'.'.$imageName ;
         $post->save();
 
+        return back()
+            ->with('success','Cadastrado com sucesso!')
+            ->with('path',$imageName);
 
-        if (Input::file('imagem')){
-            File::move($imagem, public_path().'/uploads/post-id'.$post->id.'.'.$extencao);
-            $post->imagem = public_path().'/uploads/post-id'.$post->id.'.'.$extencao;
-            $post->save();
-        }
-
-        return redirect('admin/services');
 
 
 
     }
+
 }
