@@ -4,6 +4,7 @@ namespace Toyopecas\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use Toyopecas\Models\Topo;
 use Toyopecas\Repositories\TopoRepositoryEloquent;
@@ -27,7 +28,8 @@ class TopoController extends Controller
 
     public function index ( )
     {
-        return view('admin.topo');
+        $topo = DB::table('topo')->select('titulo', 'descricao')->get();
+        return view('admin.topo', compact('topo'));
     }
 
     public function store (Request $request)

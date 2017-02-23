@@ -22,17 +22,22 @@ Route::get('/home', 'HomeController@index');
 
 
 Route::get('/', 'FrontController@index');
-Route::get('/admin', 'AdminController@index');
-
-Route::get('admin/topo', ['as' => 'admin.topo.index', 'uses' =>'TopoController@index']);
-Route::post('admin/topo/store', ['as' => 'admin.topo.store', 'uses' =>'TopoController@store']);
-
-Route::get('admin/services', ['as' => 'admin.services.store', 'uses' =>'ServicesController@index']);
-Route::post('admin/services/create', ['as' => 'admin.services.create', 'uses' =>'ServicesController@create']);
-
-Route::get('admin/sobre', ['as' => 'admin.sobre.store', 'uses' =>'SobreController@index']);
-Route::post('admin/sobre/create', ['as' => 'admin.sobre.create', 'uses' =>'SobreController@create']);
 
 
-Route::get('admin/produtos', ['as' => 'admin.produtos.store', 'uses' =>'ProdutosController@index']);
-Route::post('admin/produtos/create', ['as' => 'admin.produtos.create', 'uses' =>'ProdutosController@create']);
+Route::group(['prefix' => 'admin', 'middleware' => 'auth.checkrole', 'as' => 'admin.'], function (){
+    Route::get('', 'AdminController@index');
+
+    Route::get('topo', ['as' => 'topo', 'uses' =>'TopoController@index']);
+    Route::post('topo', ['as' => 'topo.store', 'uses' =>'TopoController@store']);
+
+    Route::get('services', ['as' => 'services.store', 'uses' =>'ServicesController@index']);
+    Route::post('services', ['as' => 'services.create', 'uses' =>'ServicesController@create']);
+
+    Route::get('sobre', ['as' => 'sobre.store', 'uses' =>'SobreController@index']);
+    Route::post('sobre', ['as' => 'sobre.create', 'uses' =>'SobreController@create']);
+
+
+    Route::get('produtos', ['as' => 'produtos.store', 'uses' =>'ProdutosController@index']);
+    Route::post('produtos/create', ['as' => 'produtos.create', 'uses' =>'ProdutosController@create']);
+});
+

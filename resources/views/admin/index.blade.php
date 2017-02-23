@@ -376,11 +376,84 @@
                     </div>
                   </li>
                 </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <ul class="nav navbar-nav navbar-right">
+                  <!-- Authentication Links -->
+                  @if (Auth::guest())
+                    <li><a href="{{ route('login') }}">Login</a></li>
+                    <li><a href="{{ route('register') }}">Register</a></li>
+                  @else
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        {{ Auth::user()->name }} <span class="caret"></span>
+                      </a>
+
+                      <ul class="dropdown-menu" role="menu">
+                        <li>
+                          <a href="{{ route('logout') }}"
+                             onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            Logout
+                          </a>
+
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                          </form>
+                        </li>
+                      </ul>
+                    </li>
+                  @endif
+                </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <ul class="nav navbar-nav navbar-right">
                   <li>
                     <!-- Profile Widget-->
                     <div class="widget-profile profile-in-header">
-                      <button type="button" data-toggle="dropdown" class="btn dropdown-toggle"><span class="name">William Jones</span><img src="img/profile/profile.jpg"></button>
+                      <button type="button" data-toggle="dropdown" class="btn dropdown-toggle"><span class="name">{{ Auth::user()->name }}</span><img src="img/profile/profile.jpg"></button>
                       <ul role="menu" class="dropdown-menu">
                         <li><a href="page-profile.html"><i class="fa fa-user"></i>Profile</a></li>
                         <li><a href="app-mail.html"><i class="fa fa-envelope"></i>Inbox</a></li>
@@ -391,6 +464,28 @@
                     </div>
                   </li>
                 </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               </div>
             </div>
           </div>
