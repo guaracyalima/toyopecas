@@ -2,7 +2,7 @@
 section {
   padding: 75px 0;
   background-color: #d14850;
-  height: auto;
+  height:320px;
 }
 
 .section-heading {
@@ -47,4 +47,13 @@ section p{
   color: #ffffff;
   margin-left: 2em;
   margin-right: 2em;
+}
+
+.service-item{
+
+  border-radius: 4px;
+  border: solid 1px #ffffff;
+  width: 67%;
+  margin-left: 3em;
+
 }

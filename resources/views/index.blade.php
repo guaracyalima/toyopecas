@@ -51,73 +51,39 @@
     {{--</header>--}}
 
 
-
-
-    <!-- Full Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        {{--<ol class="carousel-indicators">--}}
-            {{--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>--}}
-            {{--<li data-target="#myCarousel" data-slide-to="1"></li>--}}
-            {{--<li data-target="#myCarousel" data-slide-to="2"></li>--}}
-        {{--</ol>--}}
 
-        <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url({{ asset('img/bg-01.jpg') }});"></div>
+
+                <div class="fill img-topo" style="background-image:url({{ asset('img/bg-01.jpg') }});"></div>
             </div>
 
             <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url({{ asset('img/bg-02.jpg') }});"></div>
+
+                <div class="fill img-topo"  style="background-image:url({{ asset('img/bg-02.jpg') }});"></div>
             </div>
 
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url({{ asset('img/bg-03.jpg') }});"></div>
+
+                <div class="fill img-topo"  style="background-image:url({{ asset('img/bg-03.jpg') }});"></div>
             </div>
 
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url({{ asset('img/bg-04.jpg') }});"></div>
+
+                <div class="fill img-topo"  style="background-image:url({{ asset('img/bg-04.jpeg') }});"></div>
             </div>
         </div>
 
-        <!-- Controls -->
-        {{--<a class="left carousel-control" href="#myCarousel" data-slide="prev">--}}
-            {{--<span class="icon-prev"></span>--}}
-        {{--</a>--}}
-        {{--<a class="right carousel-control" href="#myCarousel" data-slide="next">--}}
-            {{--<span class="icon-next"></span>--}}
-        {{--</a>--}}
 
     </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="topo-textos" >
 
         <div class="container">
             <div class="row">
                 <h3 id="title-head">Conheça nossos produtos</h3>
-                <div class="col-md-8 col-md-offset-2">
+                <div class="">
                     <p id="text-head">Lorem ipsum dolor sit amet, natum bonorum expetendis usu ut.
                         Eum impetus offendit disputationi eu, at vim
                         aliquip lucilius praesent. Alia laudem antiopam te ius, sed ad munere integre,
@@ -135,42 +101,42 @@
             <div class="row">
                 <div class="col-md-12 owl-carousel">
 
-                    <div class="item">
+                    <div class="service-item">
                         {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="service-item">
                         {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="service-item">
                         {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="service-item">
                         {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="service-item">
                         {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
                             comprehensam nam no. Mei cu dicat voluptaria volumus.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="service-item">
                         {{--<img src="{{ asset('img/4.jpg') }}" alt="">--}}
                         <h3>Serviço</h3>
                         <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque
@@ -428,7 +394,6 @@
         $('.carousel').carousel({
             interval: 5000 //changes the speed
         })
-
 
         var owl = $('.owl-carousel');
         owl.owlCarousel({

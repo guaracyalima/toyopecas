@@ -9,9 +9,9 @@
 
 .image-bg-fluid-height {
   background: url('http://pipsum.com/1920x720.jpg') no-repeat center center scroll;
-  -ms-filter:"alpha(opacity=50)";
-  -moz-opacity:.50;
-  filter:alpha(opacity=50);
+  //-ms-filter:"alpha(opacity=50)";
+  //-moz-opacity:.50;
+  //filter:alpha(opacity=50);
   opacity:.50;
 
   height: 40em;
