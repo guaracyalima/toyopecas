@@ -43,7 +43,7 @@
           <div class="col-md-6 col-md-offset-4">
             <div class="checkbox">
               <label>
-                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Lembrar de min?
               </label>
             </div>
           </div>
@@ -65,7 +65,7 @@
             Esqueceu a sua senha?
           </a>
 
-          <a href="page-register.html" class="fr">SIGN UP</a></div>
+          <a href="{{ route('register') }}" class="fr">Cadastre-se</a></div>
       </form>
 
 

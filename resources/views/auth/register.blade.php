@@ -61,7 +61,7 @@
               <div class="l-span-md-12">
                 <div class="or"><span>- Ou -</span></div>
               </div>
-              <div class="l-span-md-12 register-sign-in"><a href="page-login.html" class="btn btn-primary btn-block btn-login-register">Login</a></div>
+              <div class="l-span-md-12 register-sign-in"><a href="{{ route('login') }}" class="btn btn-primary btn-block btn-login-register">Login</a></div>
               <div class="l-col-sm-6"><a href="#" class="btn btn-facebook btn-block"><i class="fa fa-facebook"></i>Conectar com o Facebook</a></div>
               <div class="l-col-sm-6"><a href="#" class="btn btn-twitter btn-block"><i class="fa fa-twitter"></i>Conectar com o Twitter</a></div>
             </div>
