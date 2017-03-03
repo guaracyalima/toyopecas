@@ -142,7 +142,7 @@
                 <div class="row">
 
                     <div class="col-sm-6 col-md-5 col-lg-6">
-                        <img src="{{ asset('img/oficina1459571167.jpg') }}" alt="" class="img-responsive" id="fachada-img">
+                        <img src="{{ asset('img/ico-destinonegocio-oficina-mecanica-istock-getty-images-1030x686.jpg') }}" alt="" class="img-responsive" id="fachada-img">
                     </div>
 
                     <div class="col-sm-6 col-md-7 col-lg-6">
@@ -297,9 +297,9 @@
                 </div>
             </div>
 
-            <div class="">
-                <p id="map"></p>
-            </div>
+            {{--<div class="">--}}
+                {{--<p id="map"></p>--}}
+            {{--</div>--}}
             <!-- Contato -->
             <div class="contato" id="contato">
                 <div class="col-sm-12 col-md-12 col-lg-12 ">
@@ -311,36 +311,73 @@
                                 Contato
                             </p>
 
-                            <div class="col-md-6 col-md-offset-3">
+                            <div class="col-md-6">
                                 <p id="contact-description">
-                                    Neque porro quisquam est, qui dolorem ipsum quia dolor
-                                    sit amet consectetur, adipisci velit, sed quia non numquam.
+
                                 </p>
                             </div>
-                            <div class="form">
-                                <form role="form" class=" col-sm-7 col-md-7 col-xs-12 col-md-offset-3">
+                            {{--<div class="col-md-6">--}}
+                                {{--<p id="map"></p>--}}
+                            {{--</div>--}}
+                            {{--<div class="form">--}}
+                                {{--<form role="form" class=" col-sm-6 col-md-6 col-xs-6">--}}
 
-                                    <div class="form-group">
-                                        <input id="name" name="name" type="text" class="form-control input-contact-form" required placeholder="Seu nome">
-                                    </div>
-                                    <div class="form-group">
-                                        <input id="phone" name="phone" type="tel" class="form-control input-contact-form" required placeholder="Seu email">
-                                    </div>
+                                    {{--<div class="form-group">--}}
+                                        {{--<input id="name" name="name" type="text" class="form-control input-contact-form" required placeholder="Seu nome">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="form-group">--}}
+                                        {{--<input id="phone" name="phone" type="tel" class="form-control input-contact-form" required placeholder="Seu email">--}}
+                                    {{--</div>--}}
 
-                                    <div class="form-group">
-                                        <input id="phone" name="phone" type="tel" class="form-control input-contact-form" required placeholder="Assunto">
-                                    </div>
+                                    {{--<div class="form-group">--}}
+                                        {{--<input id="phone" name="phone" type="tel" class="form-control input-contact-form" required placeholder="Assunto">--}}
+                                    {{--</div>--}}
 
-                                    <div class="form-group">
-                                        <textarea id="message" name="msg" class="form-control input-contact-form" required placeholder="Mensagem"></textarea>
-                                    </div>
+                                    {{--<div class="form-group">--}}
+                                        {{--<textarea id="message" name="msg" class="form-control input-contact-form" required placeholder="Mensagem"></textarea>--}}
+                                    {{--</div>--}}
 
-                                    <div class="form-group">
-                                        <button class="contact-button">Enviar</button>
-                                    </div>
-                                </form>
+                                    {{--<div class="form-group">--}}
+                                        {{--<button class="contact-button">Enviar</button>--}}
+                                    {{--</div>--}}
+                                {{--</form>--}}
+                            {{--</div>--}}
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-map">
+                                    <p id="map"></p>
+                                </div>
                             </div>
 
+                            <div class="contact-form-item">
+                                <div class="col-md-4">
+
+                                    <div class="form">
+                                        <form role="form" class=" col-sm-7 col-md-7 col-xs-12 col-md-offset-3" id="contact-form-form">
+
+                                            <div class="form-group">
+                                                <input id="name" name="name" type="text" class="form-control input-contact-form" required placeholder="Seu nome">
+                                            </div>
+                                            <div class="form-group">
+                                                <input id="phone" name="phone" type="tel" class="form-control input-contact-form" required placeholder="Seu email">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input id="phone" name="phone" type="tel" class="form-control input-contact-form" required placeholder="Assunto">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <textarea id="message" name="msg" class="form-control input-contact-form" required placeholder="Mensagem" rows="8" cols="40"></textarea>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <button class="contact-button">Enviar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>

@@ -15,8 +15,8 @@ class CreateTopoTable extends Migration
     {
         Schema::create('topo', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('titulo');
-            $table->string('descricao');
+            $table->string('titulo')->nullable();
+            $table->text('descricao')->nullable();
             $table->timestamps();
         });
     }

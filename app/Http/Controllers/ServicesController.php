@@ -26,7 +26,7 @@ class ServicesController extends Controller
     }
     public function index (  )
     {
-        $dados = $this->repository->paginate(1);
+        $dados = $this->repository->paginate(5);
         return view('admin.services', compact('dados'));
     }
 
@@ -39,15 +39,16 @@ class ServicesController extends Controller
         $post->texto = Input::get('texto');
         $post->img ="";
 
-        $imageName = $post->id.'.'.$request->img->getClientOriginalExtension();
-        $request->img->move(public_path('uploads'), $imageName);
-
-        $post->img = public_path('/uploads/').$post->id.'.'.$imageName ;
+//        $imageName = $post->id.'.'.$request->img->getClientOriginalExtension();
+//        $request->img->move(public_path('uploads'), $imageName);
+//
+//        $post->img = public_path('/uploads/').$post->id.'.'.$imageName ;
         $post->save();
 
-        return back()
-            ->with('success','Cadastrado com sucesso!')
-            ->with('path',$imageName);
+        return view('admin.services');
+        //return back()
+          //  ->with('success','Cadastrado com sucesso!')
+            //->with('path',$imageName);
 
 
 

@@ -407,14 +407,14 @@
           </ul>
           
           
-          @foreach($dados as $item)
-            <ul>
-              <li>{{ $item->texto }}</li>
-              <li>{{ $item->id }}</li>
-              <li>{{$item->titulo}}</li>
-              <li>{{$item->img}}</li>
-            </ul>
-            @endforeach
+          {{--@foreach($dados as $item)--}}
+            {{--<ul>--}}
+              {{--<li>{{ $item->texto }}</li>--}}
+              {{--<li>{{ $item->id }}</li>--}}
+              {{--<li>{{$item->titulo}}</li>--}}
+              {{--<li>{{$item->img}}</li>--}}
+            {{--</ul>--}}
+            {{--@endforeach--}}
           
           
           
@@ -424,13 +424,13 @@
           <div class="l-box no-border">
             <div class="l-spaced">
 
-              @if ($message = Session::get('success'))
-                <div class="alert alert-success alert-block">
-                  <button type="button" class="close" data-dismiss="alert">×</button>
-                  <strong>{{ $message }}</strong>
-                </div>
-                <img src="/uploads/{{ Session::get('path') }}">
-              @endif
+              {{--@if ($message = Session::get('success'))--}}
+                {{--<div class="alert alert-success alert-block">--}}
+                  {{--<button type="button" class="close" data-dismiss="alert">×</button>--}}
+                  {{--<strong>{{ $message }}</strong>--}}
+                {{--</div>--}}
+                {{--<img src="/uploads/{{ Session::get('path') }}">--}}
+              {{--@endif--}}
 
               <h3>Gerenciar serviços</h3>
               @if(session('erro'))
@@ -449,14 +449,14 @@
               <div class="form-group">
                 {!! Form::label('texto', 'Descrição:') !!}
 
-                {!! Form::text('texto', null ,['class' => 'form-control', 'placeholder' => 'Lorem ipsun...']) !!}
+                {!! Form::textarea('texto', null ,['class' => 'form-control', 'placeholder' => 'Lorem ipsun...']) !!}
               </div>
 
-              <div class="form-group">
-                {!! Form::label('img', 'Imagem:') !!}
+              {{--<div class="form-group">--}}
+                {{--{!! Form::label('img', 'Imagem:') !!}--}}
 
-                {!! Form::file('img', null ,['class' => 'form-control']) !!}
-              </div>
+                {{--{!! Form::file('img', null ,['class' => 'form-control']) !!}--}}
+              {{--</div>--}}
 
               {!! Form::submit('Cadastrar', ['class' => 'btn btn-primary center-block']) !!}
 

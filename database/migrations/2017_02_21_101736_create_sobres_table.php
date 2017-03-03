@@ -15,10 +15,10 @@ class CreateSobresTable extends Migration
 	{
 		Schema::create('sobres', function(Blueprint $table) {
             $table->increments('id');
-            $table->string('principal');
-            $table->string('missao');
-            $table->string('visao');
-            $table->string('img')->default('null');
+            $table->text('principal')->nullable();
+            $table->text('missao')->nullable();
+            $table->text('visao')->nullable();
+            $table->string('img')->default('null')->nullable();
             $table->timestamps();
 		});
 	}

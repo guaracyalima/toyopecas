@@ -12,9 +12,10 @@
     {{--<title>{{ config('app.name', 'Toypeças') }}</title>--}}
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://developers.google.com/maps/documentation/javascript/demos/demos.css">
     <link href="{{ asset('css/ow.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://developers.google.com/maps/documentation/javascript/demos/demos.css">
+
 
 
     {{--<!-- Scripts -->--}}

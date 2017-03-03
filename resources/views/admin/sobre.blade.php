@@ -420,18 +420,18 @@
               <div class="form-group">
                 {!! Form::label('principal', 'Sobre:') !!}
 
-                {!! Form::text('principal', null ,['class' => 'form-control', 'placeholder' => 'A empresa foi fundada em 1997']) !!}
+                {!! Form::textarea('principal', null ,['class' => 'form-control', 'placeholder' => 'A empresa foi fundada em 1997']) !!}
               </div>
               <div class="form-group">
                 {!! Form::label('missao', 'Missão:') !!}
 
-                {!! Form::text('missao', null ,['class' => 'form-control', 'placeholder' => 'Lorem ipsun...']) !!}
+                {!! Form::textarea('missao', null ,['class' => 'form-control', 'placeholder' => 'Lorem ipsun...']) !!}
               </div>
 
               <div class="form-group">
                 {!! Form::label('visao', 'Visão:') !!}
 
-                {!! Form::text('visao', null ,['class' => 'form-control', 'placeholder' => 'Lorem ipsun...']) !!}
+                {!! Form::textarea('visao', null ,['class' => 'form-control', 'placeholder' => 'Lorem ipsun...']) !!}
               </div>
 
                 <div class="form-group">
