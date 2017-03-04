@@ -86,10 +86,10 @@
 
             <h3 id="title-head">Conheça nossos produtos</h3>
             <div class="">
-                <p id="text-head">Lorem ipsum dolor sit amet, natum bonorum expetendis usu ut.
-                    Eum impetus offendit disputationi eu, at vim
-                    aliquip lucilius praesent. Alia laudem antiopam te ius, sed ad munere integre,
-                    ubique facete sapientem nam ut.</p>
+                {{--<p id="text-head">Lorem ipsum dolor sit amet, natum bonorum expetendis usu ut.--}}
+                    {{--Eum impetus offendit disputationi eu, at vim--}}
+                    {{--aliquip lucilius praesent. Alia laudem antiopam te ius, sed ad munere integre,--}}
+                    {{--ubique facete sapientem nam ut.</p>--}}
                 </div>
 
             </div>
@@ -199,9 +199,9 @@
 
 
         <div class="col-sm-6 col-lg-6 col-md-offset-3">
-            <p id="produtos-description-section">
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur,
-                adipisci velit, sed quia non numquam.</p>
+            {{--<p id="produtos-description-section">--}}
+                {{--Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur,--}}
+                {{--adipisci velit, sed quia non numquam.</p>--}}
             </div>
 
 
@@ -311,9 +311,10 @@
                                 Contato
                             </p>
 
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <p id="contact-description">
-
+                                    <i class="fa fa-phone " aria-hidden="true" id="telefone-da-empresa "></i>
+                                      (81) 3471-4078
                                 </p>
                             </div>
                             {{--<div class="col-md-6">--}}
